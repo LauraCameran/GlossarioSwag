@@ -1,0 +1,137 @@
+\newpage
+	\flushright{\hyperref[index]{\color{black!65}{Ritorna all'indice}}}\flushleft
+	\section{R} \label{sec:R}
+	
+		\subsection{READY}	\index{Ready}	\label{ready}
+		Vuol dire che nessuna parte manca e la documentazione è pronta. Gli stakeholder hanno accettato il prodotto e vogliono che diventi operativo.
+	
+		\subsection{REALIZZAZIONE} \index{Realizzazione}	\label{realizzazione}
+		Attua ciò che è stato progettato durante la \underline{\hyperref[progettazione]{Progettazione Software}}: avviene quindi la stesura del codice SENZA INVENTARE. Infine avviene l'attività di collaudo che è il nostro passo di uscita sapendo l'esito che avrà.
+		
+		\subsection{REQUIREMENTS} \index{Requirements} \label{requirements}
+		Idea di soluzione per soddisfare il bisogno (quindi astratta).
+		È la descrizione documentata di una \textbf{capacità}
+		\begin{itemize}
+			\item necessaria a un utente per raggiungere un obiettivo (vista dal lato del cliente);
+			\item che un sistema deve possedere per adempiere a un obbligo (vista dal lato dello sviluppatore). 
+		\end{itemize}
+	
+	    I requisiti devono essere tutti identificabili e verificabili. Vengono classificati, per facilitare la comprensione, la \underline{\hyperref[manutenzione]{manutenzione}} e il \underline{\hyperref[tracciamento]{tracciamento}}, in base ad
+	    	\begin{itemize}
+	    		\item \textbf{attributi di prodotto}: rispondono a \textit{Cosa devo fare?} (requisiti funzionali, prestazionali e di qualità);
+	    		\item \textbf{attributi di processo}: rispondono a \textit{Come devo farlo?} (requisiti di vincolo);
+	    	\end{itemize}
+	    
+		Ogni tipo di requisito può essere diretto o indiretto, implicito o esplicito ma ognuno deve essere \underline{\hyperref[verificare]{verificabile}} tramite:
+		\begin{itemize}
+			\item \textbf{per requisiti funzionali}: test, dimostrazione frontale, revisione;
+			\item \textbf{per requisiti prestazionali}: misurazione;
+			\item \textbf{per requisiti qualitativi}: tecniche ad hoc;
+			\item \textbf{per requisiti dichiarativi(vincoli)}: revisione.
+		\end{itemize}
+	
+		In base all'utilità strategica possono inoltre essere classificati in:
+		\begin{itemize}
+			\item \textbf{obbligatori}: irrinunciabili secondo gli \underline{\hyperref[stakeholder]{stakeholder}};
+			\item \textbf{desiderabili}: non strettamente necessari ma danno valore aggiunto; 
+			\item \textbf{opzionali}: relativamente utili.
+		\end{itemize}
+		Questo perché devo capire quali requisiti sono irrinunciabili. I requisiti sono quindi elastici e dipendono da me, da quanto sono veloce, ecc.
+			
+		\underline{\hyperref[qualita]{Qualità}} che ci devono essere secondo \underline{\hyperref[ieee830]{IEEE 830}}:
+		\begin{itemize} %slide 25/32
+			\item \textbf{non ambiguo} ovvero il requisito deve essere scritto in maniera concisa per non creare confusione (ma attenzione perché non c'é una metrica);
+			\item \textbf{corretto};
+			\item \textbf{completo} c'è tutto ciò che ci deve essere;
+			\item \textbf{verificabile};
+			\item \textbf{consistente} perché non possono essere contraddittori;
+			\item \textbf{modificabile} con la \underline{\hyperref[gestionecambiamenti]{Gestione dei cambiamenti}}, ma l'indice che ogni requisito ha non lo do io (altrimenti se modifico qualcosa devo riordinare tutto) e deve essere significativo;
+			\item \textbf{tracciabile};
+			\item \textbf{ordinato per prevalenza};		
+		\end{itemize}	
+	
+		Durante l'\underline{\hyperref[analisideirequisiti]{Analisi dei requisiti}} avviene inoltre la \underline{\hyperref[verificare]{verifica}} dei requisiti:
+			\begin{itemize}
+				\item Viene eseguita su un documento organizzato tramite \underline{\hyperref[walkthrough]{walkthrough}} o \underline{\hyperref[inspection]{ispezione}} (lettura mirata);
+				\item Si ricerca chiarezza espressiva, che non è il linguaggio naturale;
+				\item Si ricerca chiarezza strutturale, ovvero si controlla la separazione tra requisiti funzionali e non-funzionali e che la \underline{\hyperref[classificazione]{classificazione dei requisiti}} sia precisa, uniforme e accurata;
+				\item Si ricerca atomicità e aggregazione, quindi i requisiti elementari e le correlazioni tra di essi chiare ed esplicite;
+			\end{itemize}
+		
+		Anche la \underline{\hyperref[gestionerequisiti]{Gestione dei requisiti}}.
+		
+		\subsection{RESPONSABILE} \index{Responsabile} \label{responsabile}
+		È uno dei \underline{\hyperref[ruoli]{ruoli}} in un progetto. Partecipa al \underline{\hyperref[progetto]{progetto}} per tutta la sua durata rappresentando il progetto presso il fornitore e il committente. Accentra le responsabilità di scelta e approvazione, quindi deve avere conoscenze e capacità tecniche per valutare (rischi e scelte varie). Ha molte responsabilità, nello specifico su: \underline{\hyperref[pianificazione]{Pianificazione}}, gestione delle risorse umane, controllo, coordinamento e relazioni con l'esterno.
+		
+		\subsection{REVISIONE DEI REQUISITI} \index{Revisione dei Requisiti} \label{RR} 
+		1. \\
+		Ha la funzione di concordare con il cliente una visione condivisa del prodotto atteso.
+		Prevede:
+		\begin{itemize}
+			\item \underline{\hyperref[analisideirequisiti]{Analisi dei Requisiti}};
+			\item \underline{\hyperref[piano]{Piano}} di Progetto;
+			\item Piano di Qualifica;
+			\item \underline{\hyperref[norme]{Norme di Progetto}};
+			\item \underline{\hyperref[studiofattibilita]{Studio di Fattibilità}};
+		\end{itemize}
+		Fa l'\underline{\hyperref[audit]{Audit Process}}.
+		
+		\subsection{REVISIONE DI ACCETTAZIONE} \index{Revisione di Accettazione} \label{RA} 
+		4. \\
+		Ha la funzione di collaudare il sistema per accettazione da parte del committente e accertarsi del soddisfacimento di tutti i requisiti utente fissati nella RR.
+		Prevede:
+		\begin{itemize}
+			\item \underline{\hyperref[productbaseline]{Product Baseline}};
+			\item \underline{\hyperref[piano]{Piano}} di Qualifica (quarta versione);
+			\item \underline{\hyperref[piano]{Piano}} di Progetto (quarta versione) con \underline{\hyperref[consuntivo]{consuntivo}} finale;
+			\item \underline{\hyperref[manuali]{Manuale}} Utente e Manuale Sviluppatore (entrambe seconda versione);
+		\end{itemize}
+		Fa l'\underline{\hyperref[audit]{Audit Process}}.
+		
+		\subsection{REVISIONE DI PROGETTAZIONE}	\index{Revisione di Progettazione} \label{RP}
+		2. \\
+		Ha la funzione di accertare la realizzabilità.
+		Prevede:
+		\begin{itemize}
+			\item \underline{\hyperref[technologybaseline]{Technology Baseline}};
+			\item \underline{\hyperref[piano]{Piano}} di Qualifica (seconda versione);
+			\item \underline{\hyperref[piano]{Piano}} di Progetto (seconda versione);
+			\item \underline{\hyperref[norme]{Norme di Progetto}} (seconda versione);
+		\end{itemize}
+		Fa l'\underline{\hyperref[joint]{Joint Review Process}}.
+		
+		\subsection{REVISIONE DI QUALIFICA} \index{Revisione di Qualifica} \label{RQ} 
+		3. \\
+		Ha la funzione di approvare l’esito finale delle verifiche e attivare la validazione.
+		Prevede:
+		\begin{itemize}
+			\item \underline{\hyperref[productbaseline]{Product Baseline}};
+			\item \underline{\hyperref[piano]{Piano}} di Qualifica (terza versione);
+			\item \underline{\hyperref[piano]{Piano}} di Progetto (terza versione);
+			\item \underline{\hyperref[manuali]{Manuale}} Utente e Manuale Sviluppatore;
+			\item eventuale \underline{\hyperref[norme]{Norme di Progetto}} (terza versione);
+		\end{itemize}
+		Fa l'\underline{\hyperref[joint]{Joint Review Process}}.
+		
+		\subsection{RIUSO} \index{Riuso} \label{riuso} 
+		Il riuso può qui essere:
+			\begin{itemize}
+				\item \textbf{occasionale} perchè "copia e incolla" opportunistico, che ha quindi un basso costo ma scarso impatto;
+				\item \textbf{sistematico} perchè è un "copia e incolla" intelligente, che ha un maggior costo ma maggior impatto;
+			\end{itemize}
+		Nel breve periodo il riuso diventa più un costo.
+		
+		
+		\subsection{RUOLI} \index{Ruoli} \label{ruoli} 
+		Il ruolo è una persona che si occupa di una funzione aziendale assegnata in un progetto. Tra queste funzioni aziendali troviamo: \textit{Sviluppo} quindi avere responsabilità tecnica e realizzativa, \textit{Direzione} quindi avere responsabilità decisionale, \textit{Amministrazione} ovvero gestione del supporto ai processi e \textit{\underline{\hyperref[qualita]{Qualità}}} quindi gestione della ricerca di economicità.
+		A seguire, l'elenco dei ruoli all'interno della \underline{\hyperref[gestioneprogetto]{gestione del progetto}} (ricordiamo che non vogliamo sovrapposizioni):
+		\begin{itemize}
+		\item \textbf{\underline{\hyperref[analista]{Analista}}}: fa l'analisi dei requisiti. Capisce ciò di cui c'è bisogno per cui è importante che si metta nei panni dell'utente.
+		\item \textbf{\underline{\hyperref[progettista]{Progettista}}}: pensa ad una possibile soluzione con qualità desiderabili (ATTENZIONE: non implementa).
+		\item \textbf{\underline{\hyperref[programmatore]{Programmatore}}}: concretizza la soluzione che il progettista ha pensato (ATTENZIONE: non inventa).
+		\item \textbf{\underline{\hyperref[verificatore]{Verificatore}}}: dice se il lavoro del programmatore è conforme alle attese. Deve poi relazionarsi ed essere di supporto.
+		\item \textbf{\underline{\hyperref[responsabile]{Responsabile}}}: "onere e onore" in particolare ha tanti oneri. Coordina il team e garantisce che non ci siano intoppi o rallentamenti.
+		\item \textbf{\underline{\hyperref[amministratore]{Amministratore}}}: garantisce che funzioni bene il nostro sistema informatico (che sia scalabile, ecc).
+		\end{itemize}		
+	
+	

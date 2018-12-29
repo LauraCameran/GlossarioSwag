@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aggiunta di un termine:
+% --------------------------
+% 	- Aggiungi una subsection del termine:
+% 		\subsection{Termine} \index{Termine} % alt{forma alternativa,altra,altra}
+%		Descrizione del termine. 
+%	- La parte % alt{...,...} serve allo script nel caso ci siano forme alternative 
+%	  della stessa parola, ad esempio plurali.
+% 	- Se ha una fonte, mettila nella sezione finale (es. url, doc, ecc)
+%
+%	- \hyperref[label]{termine}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alla consegna
+% --------------------------
+%	- Va ricreato il file esterno dell'indice.
+%    	Comando in TexStudio: Strumenti --> Indice
+%	- Verificare che l'indice sia aggiornato correttamente.
+%	- Nella repo ci vanno solo i file .tex e .idx 		
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%V.I sono i very important
+
+
+\documentclass[12pt]{article}
+
+\usepackage{makeidx}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{xkeyval}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+%\usepackage{subcaption} %per due immagini vicine
+%\usepackage{caption}
+\usepackage{subfig}
+
+
+\geometry{
+	a4paper,
+	total={160mm,225mm},
+	left=25mm,
+	top=25mm
+}
+
+\AtBeginDocument{\renewcommand\indexname{Indice analitico}}
+\makeindex
+
+\begin{document}
+	
+	\begin{titlepage}
+		\centering
+		\LARGE \textbf{Glossario}
+	\end{titlepage}
+	
+	\setcounter{secnumdepth}{0}
+	\setcounter{tocdepth}{1}
+	
+	\tableofcontents
+	\clearpage
+	\printindex \label{index} %stampa l'indice in questa posizione 
+	\clearpage
+	
+	\include{sections/A}
+	\include{sections/B}
+	\include{sections/C}
+	\include{sections/D}
+	\include{sections/E}
+	\include{sections/F}
+	\include{sections/G}
+	\include{sections/H}
+	\include{sections/I}
+	\include{sections/J}
+	\include{sections/K}
+	\include{sections/L}
+	\include{sections/M}
+	\include{sections/N}
+	\include{sections/O}
+	\include{sections/P}
+	\include{sections/Q}
+	\include{sections/R}
+	\include{sections/S}
+	\include{sections/T}
+	\include{sections/U}
+	\include{sections/V}
+	\include{sections/W}
+	\include{sections/X}
+	\include{sections/Y}
+	\include{sections/Z}
+		
+	
+%Da inserire:     --body
+
+				
+		%V e V: analisi dinamica 20 dicembre
+		
+		%\subsection{CONDIZIONI}
+		
+		%\subsection{DECISIONI}	%slide 22-23
+		
+		
+		%\subsection{terza slide 22}
+		
+		
+		
+	
+\end{document}

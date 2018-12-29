@@ -1,0 +1,144 @@
+\newpage
+	\flushright{\hyperref[index]{\color{black!65}{Ritorna all'indice}}}\flushleft
+	\section{M} \label{sec:M} 
+	
+		\subsection{MANUALI}	\index{Manuali} \label{manuali}
+		Uno dei prodotti che racconta il prodotto all'utente.
+		
+		\subsection{MANUALE DELLA QUALITÀ} \index{Manuale della qualità} \label{manualequalita} % (slide 10) Set Lezione del 4/12 - Qualità di processo
+		Il documento che definisce il sistema di gestione della qualità di un’organizzazione. Ha una visione ad alto livello. Si integra con i processi e le procedure aziendali e fissa gli obiettivi di qualità aziendali e le strategie per perseguirli.
+	
+		\subsection{MANUTENZIONE} \index{Manutenzione} \label{manutenzione}
+		Complesso delle operazioni necessarie a conservare la conveniente funzionalità ed \underline{\hyperref[efficienza]{efficienza}}. Può essere:
+			\begin{itemize}
+				\item \textbf{correttiva} = rimozione di difetti;
+				\item \textbf{adattativa} = raffinamento dei \underline{\hyperref[requirements]{requisiti}};
+				\item \textbf{evolutiva} = evoluzione del sistema;
+			\end{itemize}
+		Dato che bisogna avere memoria di quello che ha funzionato e quello che funziona ora, possiamo dire che un prodotto sotto manutenzione ha una storia, ed essa va gestita con \underline{\hyperref[controllodiversione]{controllo di versione}}.
+			
+		\subsection{MATURITÀ} \index{Maturità} \label{maturita} %(slide 14) Set Lezione del 4/12 - Qualità di processo
+		Misura la \underline{\hyperref[qualita]{qualità}} dei \underline{\hyperref[processo]{processi}}, ovvero misura quanto (e quanto bene) l’azienda è governata dal suo sistema di processi. È quindi caratteristica di un insieme di processi e rappresenta il risultato delle \textit{\underline{\hyperref[capability]{capability}}} dei processi considerati.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{img/maturity}		
+			\caption{I 5 livelli di maturità per la qualità di processo.}
+		\end{figure} 
+		I livelli di maturità di \underline{\hyperref[cmmi]{CMMI}} mi aiutano a capire con quale intelligenza agisco.\\
+		La maturità di prdotto valuta il grado di evoluzione del prodotto: quanto migliora in seguito alle prove, quanto diminuisce la densità dei difetti, quanto può costare la scoperta del prossimo difetto.
+		
+		\subsection{METRICA} \index{Metrica} \label{metrica} 
+		Integrale degli usi o utenti nel tempo.\\
+	
+		La \textit{Metrica Software} comprende:
+			\begin{itemize}
+				\item \textit{SLOC} (= Source Lines Of Code): conta le linee, è quindi oggettivamente misurabile e dà limiti;
+				\item \textit{Effort}: risorse umane misurate come giorni/persona.
+				\item \textit{Testo}: perché il testo è facilmente offuscabile, quindi si usa "l'indice di nebbia"/leggibilità. 
+			\end{itemize}
+		Dà il modo di classificare attributi di processo e ci aiuta a ragionare a monte del problema e non a valle. In questo modo si possono predire gli attributi che arriveranno (capire prima se il prodotto farà schifo). L'obiettivo è quello di identificare anomalie \textit{"the sooner the better"}. \\
+		Associate alla \underline{\hyperref[qualita]{Qualità del Software}} c'è l'idea di \textit{assunzioni} sulle metriche: nostro modo di pensare al problema. Attenzione perché non sempre si può misurare ciò che vogliamo. Ci interessa misurare ciò che è tracciabile di quello che vogliamo sapere (esempio dell'analisi del sangue: voglio sapere una cosa di alto livello non misurabile, tramite dati del mio sangue che sono misurabili). Importanti attributi sono: manutenibilità, affidabilità, \underline{\hyperref[portabilita]{portabilità}} e usabilità.
+		
+		\subsection{MISTAKE}	\index{Mistake}	\label{mistake}
+		Ci siamo sbagliati noi nel produrre qualcosa che se utilizzato  nel SW, causerà errore. Questo è quindi a monte di tutto.		 
+		
+		\subsection{MODELLI DI SVILUPPO} \index{Modelli di sviluppo} \label{modelli}
+		Il modello è una costruzione astratta che fa capire qual è il problema e dà strumenti per risolverlo. È un riferimento ideale ad una cosa concreta, quindi astrazione non eseguibile, ma che mi definisce le proprietà. Date le diverse transizioni previste tra gli stati di un ciclo di vita e diverse regole di attivazione, esistono diversi tipi di modelli.
+		%Flipped Classroom 6 dicembre
+		I modelli, per essere tali, sono tutti "buoni". Semplicemente alcuni sono più adatti a certe esigenze rispetto ad altri.
+		\begin{itemize}
+			\item \textbf{A cosa serve}:
+			Tre cose hanno fortissima influenza sulla scelta da fare:
+			\begin{itemize}
+				\item obiettivi;
+				\item rischi;
+				\item vincoli;
+			\end{itemize}
+			Serve a perseguire gli obiettivi cercando di rispettare i vincoli e mitigando i rischi.
+			\item \textbf{Di cosa è fatto}:
+			Il modello di sviluppo è legato al progetto da portare a termine e il progetto determina i processi. Quindi i processi hanno a che vedere con il modello di sviluppo. C'è un importante ordine di attività. Chi decide quali sono i \textit{gate} (momento in cui si termina un'attività e si passa a quella successiva) siamo noi, ovvero il fornitore, in base a quali obiettivi raggiungere nel tempo. Le milestone coincidono con i nostri gate. Le milestone c'entrano infatti sia con obiettivi, che con rischi e vincoli. \\
+			Per dare elementi di mitigazione ai rischi ho la \underline{\hyperref[technologybaseline]{Technology Baseline}}. [Quante milestone ho lo decide il fornitore. La baseline sono le evidenze che porto per aprire i gate. Prima vengono le milestone e poi le baseline.] \\
+			Il \underline{\hyperref[semat]{SEMAT}} mi dà l'essenza che sta alla radice di ogni modello di sviluppo. Dal SEMAT riesco a capire quali milestone adottare nel mio piano. E tra quelle che posso scegliere, le milestone che scelgo devono essere una confluenza di quelle più specializzate (ricordare le cards). Ho tante baseline quanti "lucchetti"(milestone) da aprire.
+			\item \textbf{Come lo si attiva}: individuando le attività riconoscibili dalle baseline che ho scelto mettendole nel tempo disponibile e assegnandole.
+		\end{itemize}	
+		
+			\subsubsection{Sequenziale (o a cascata)} \index{Modello Sequenziale} \label{msequenziale}
+			\textbf{In breve}: ha rigide fasi sequenziali. \\
+			 Tutto deve essere ripetibile (quindi anche migliorabile) e lineare (successioni di \underline{\hyperref[fase]{fasi}}), ma non ammette un ritorno a fasi precedenti. Adotta quindi una strategia in cui si continua o al più ci si ferma. Si prosegue solo se l'azione viene considerata buona (quindi documentata prima). I suoi prodotti sono principalmente \textit{documenti}. Ogni fase è caratterizzata da pre e post condizioni (di ingresso le prime e di uscita le seconde) e viene definita in termini di responsabilità e ruoli coinvolti. Dato che le fasi sono durate temporali, devono essere distinte e non sovrapposte nel tempo, dato che presentano delle dipendenze causali tra loro. Lo schema per il modello a cascata prevede in ordine: \underline{\hyperref[analisideirequisiti]{Analisi}} - \underline{\hyperref[progettazione]{Progettazione}} - \underline{\hyperref[realizzazione]{Realizzazione}} - \underline{\hyperref[manutenzione]{Manutenzione}}.  \\
+			 \textbf{Difetto}: è totalmente rigido quindi ha bisogno di correttivi (come i \underline{\hyperref[prototipo]{prototipi}}).
+			 
+			 \begin{figure}[H]
+			 	\centering
+			 	\includegraphics[width=0.8\textwidth]{img/cascata}		
+			 	\caption{Schema del modello a cascata secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
+			 \end{figure} 
+			
+			\subsubsection{Incrementale} \index{Modello Incrementale} \label{mincrementale}
+			\textbf{In breve}: realizzazione in più passi, prevede rilasci multipli e successivi, ciascuno realizza un incremento di funzionalità. \\
+			Dato che spesso non conviene posticipare l'integrazione di tutte le parti del sistema, risulta migliore l'\underline{\hyperref[integrazione]{integrazione continua}} di piccole parti. Sceglie un ordine di sviluppo che prepari il passaggio successivo motivo per cui ci vuole un modo strategico per capire come muoversi. I primi incrementi possono essere frutto di prototipazione,
+			aiutando a fissare meglio i requisiti per gli incrementi successivi, ma i primi incrementi puntano a soddisfare i requisiti più importanti sul piano strategico così essi diventano presto chiari e stabili e quelli meno importanti si possono armonizzare al sistema. Ogni incremento riduce quindi il rischio di fallimento. Analisi e progettazione architetturale non vengono ripetute, dato che l'architettura del sistema è ben identificata e fissata dall'inizio, invece la realizzazione è incrementale (al momento della validazione può avvenire un ritorno).
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.8\textwidth]{img/incrementale}		
+				\caption{Schema del modello incrementale secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
+			\end{figure} 
+			
+			\subsubsection{Iterativo} \index{Modello Iterativo} \label{miterativo}
+			\textbf{In breve}: ha ripetute iterazioni interne. \\
+			Questo tipo di modello è applicabile a qualunque modello di ciclo di vita; consente infatti maggior capacità di adattamento. Il problema è che può andare incontro al rischio di non convergenza perché ogni iterazione comporta un ritorno all'indietro nella direzione opposta all'avanzamento del tempo. In generale conviene quindi decomporre la realizzazione del sistema in parti più piccole trattando prima le parti più critiche (magari quelle i cui requisiti vanno maggiormente chiariti). 
+			
+			\subsubsection{A evoluzioni successive} \index{Modello a evoluzioni successive}
+			\textbf{In breve}: comporta il riattraversamento di più stati di ciclo di vita. \\ 
+			 \underline{\hyperref[prodotto]{Prodotto}} che evolve come conseguenza di una \underline{\hyperref[manutenzione]{manutenzione}}. Aiuta a rispondere a bisogni non inizialmente preventivabili. Inizialmente viene fatta un'analisi preliminare che identifica i requisiti e definisce l'architettura di massima e pianifica i passi di analisi. Dopodiché avviene l'analisi e realizzazione di una singola evoluzione (per raffinamento dell'analisi iniziale o per progettazione-codifica-prove-integrazione). Infine c'è il rilascio di versioni che man mano saranno sempre più complete. Ogni fase ammette iterazioni multiple e parallele.
+			 
+			 \begin{figure}[H]
+			 	\centering
+			 	\includegraphics[width=0.8\textwidth]{img/evoluzione}		
+			 	\caption{Schema del modello evolutivo secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
+			 \end{figure} 	
+			
+			\subsubsection{Per componenti} \index{Modello per componenti} %!!!APPROFONDIRE
+			\textbf{In breve}: è orientato al riuso. \\
+			 Decomposto in parti già esistenti e funzionanti, riusabili. L'analisi dei requisiti viene in seguito rivisitata in base alle possibilità di riuso.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.8\textwidth]{img/acomponenti}		
+				\caption{Schema del modello a componenti secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
+			\end{figure} 	
+			
+			\subsubsection{Agile} \index{Modello Agile}
+			\textbf{In breve}: è altamente dinamico ed è fatto di brevi ciclo iterativi e incrementali. \\
+			Basato su principi fortemente di reazione che sono:
+				\begin{enumerate}
+			 		\item \textit{Individuals and interactions over processes and tools}: l’eccessiva rigidità ostacola l’emergere del valore;
+			 		\item \textit{Working sofware over comprehensive documentation}: la documentazione non sempre corrisponde a SW funzionante
+			 		\item \textit{Customer collaboration over contract negotiation}: l’interazione con gli stakeholder va incentivata;
+			 		\item \textit{Responding to change over following a plan}: la capacità di adattamento al cambiare delle situazioni;
+			 	\end{enumerate}
+		 	Si basa sull'idea di \textit{user story}, ovvero una funzionalità che è significativa per l'utente e che vuole nella realizzazione del software richiesto. Ogni \textit{user story} è definita un documento che descrive il problema, una sintesi delle conversazioni di discussione del problema con gli \underline{\hyperref[stakeholder]{stakeholder}} e la strategia da adottare per soddisfare il problema. Si prosegue suddividendo il lavoro in piccoli  \underline{\hyperref[incremento]{incrementi}} (che possono essere sviluppati anche indipendentemente) sviluppati in modo continuo e sequenziale dall'analisi all'integrazione. Gli \textit{obiettivi strategici} sono poter dimostrare costantemente al cliente quanto fatto e che l'intero  \underline{\hyperref[prodotto]{prodotto SW}} sia ben integrato e verificato. 
+		 	[NB: Non é molto buono. É assente la documentazione quindi é più un costo che un valore]
+			
+			\subsection{SCRUM} 
+			\textbf{In breve}: è un tipo di Modello Agile ["mischia di rugby"]. \\
+			È costituito da:
+				\begin{itemize}
+					\item \textbf{Product \underline{\hyperref[backlog]{backlog}}}: requisiti e funzionalità del prodotto;
+					\item \textbf{Sprint}: fase operativa di sviluppo;
+					\item \textbf{Sprint \underline{\hyperref[backlog]{backlog}}}: insieme di storie del prossimo sprint;
+					\item \textbf{Sprint Planning}: pianificazione dello sprint;
+					\item \textbf{Daily Scrum}: controllo giornaliero dell'avanzamento;
+					\item \textbf{Sprint Review}: controllo prodotti dello sprint;
+					\item \textbf{Sprint Retrospective}: controllo \underline{\hyperref[qualita]{qualità}} sullo sprint;
+				\end{itemize}
+			
+			\subsubsection{A spirale} \index{Modello a spirale}
+			(Complicato, non lo trattiamo). Va da un problema piccolo ad uno sempre più grande. Pensato per attività che non hanno una \underline{\hyperref[best]{best practice}} ben nota.
+			
+						
+			
+		\subsection{MODULI}	\index{Moduli}	\label{moduli}
+		La più piccola entità progettuale che sia utile rappresentare.	
+	
+	
