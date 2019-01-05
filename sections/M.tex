@@ -1,5 +1,4 @@
 \newpage
-	\flushright{\hyperref[index]{\color{black!65}{Ritorna all'indice}}}\flushleft
 	\section{M} \label{sec:M} 
 	
 		\subsection{MANUALI}	\index{Manuali} \label{manuali}
@@ -99,14 +98,104 @@
 			 \end{figure} 	
 			
 			\subsubsection{Per componenti} \index{Modello per componenti} %!!!APPROFONDIRE
-			\textbf{In breve}: è orientato al riuso. \\
+			\textbf{In breve}: è orientato a massimizzare il riuso di software. \\
 			 Decomposto in parti già esistenti e funzionanti, riusabili. L'analisi dei requisiti viene in seguito rivisitata in base alle possibilità di riuso.
 			
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.8\textwidth]{img/acomponenti}		
 				\caption{Schema del modello a componenti secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
-			\end{figure} 	
+			\end{figure} 
+		
+			\paragraph{Il riuso}
+			Dal Sommerville sappiamo del \textbf{riuso} che: \\
+			Le unità software riusate possono avere diversa dimensione, per esempio:
+			\begin{itemize}
+				\item \textbf{System reuse}: un intero sistema (che può essere composto da più applicazioni) può essere riusato come parte di un sistema di tanti sistemi
+				\item \textbf{Application reuse}: un'applicazione può essere riusata incorporandola in altri sistemi senza fare cambiamenti, oppure configurando l'applicazione per diversi customers
+				\item \textbf{Component reuse}: componenti di un'applicazione (da sotto-sistemi a singoli oggetti) possono essere riusate. Per esempio, un sistema di sviluppo che fa pattern-matching, che fa parte di in un sistema di text-processing, può essere riusato in un sistema di gestione di database. Le componenti possono risiedere in un cloud o in server privati e possono essere accessibili tramite Application Programming Interface (API). 
+				\item \textbf{Object and function reuse}: componenti software che implementano una singola funzione o una classe oggetto possono essere riusate. Molte librerie di funzioni e classi sono liberamente disponibili. Si riusano classi e funzioni in queste librerie collegandole con lo sviluppo di nuovo codice.
+			\end{itemize}	
+			A volte i sistemi o componenti sono così specifici che è molto costoso modificarli per una nuova situazione. Quindi, più che riusare il codice, è possibile riusare le idee che stanno alla base del software. Questo è chiamato \textbf{concept reuse} e tratta per esempio di riusare un way of working o un algoritmo e approcci quali i design patterns. \\
+			I benefici del riuso sono:
+			\begin{itemize}
+				\item Costo complessivo di sviluppo più basso, perché meno componenti software devono essere progettate, implementate e validate
+				\item Sviluppo accelerato
+				\item Aumento di affidabilità, perchè software che è stato provato e testato in altri sistemi funzionanti è più affidabile di un nuovo software. I suoi difetti di progettazione e implementazione dovrebbero già esser stati trovati e sistemati.
+				\item  Ridotto rischio di processo, vero specialmente per grandi componenti software riusate come sottosistemi. È un fattore importante per il Project Manager perché riduce il margine di errore nella stima dei costi di un progetto.
+				\item Conformità con gli standard, perché alcuni standard, come gli intrface standard, possono essere implementati come set di componenti riusabili
+			\end{itemize}
+			Ci sono però anche delle difficoltà legate al riuso come:
+			\begin{itemize}
+				\item Costo associato al capire se una componente è adatta al riuso per una particolare situazione o meno. È un costo aggiuntivo che potrebbe essere così elevato che potrebbe non abbassare il costo complessivo di sviluppo
+				\item Creare, mantenere e usare la componente di una libreria, perché può essere oneroso
+				\item Maggiori costi di manutenzione, perché se il codice sorgente della componente riusate non è disponibile, gli elementi riusati del sistema potrebbero diventare incompatibili con i cambiamenti fatti al sistema.
+				\item Mancanza di strumenti di supporto, perché alcuni tools non supportano lo sviluppo con riuso.
+				\item "Not-invented-here" syndrome, ovvero il fatto che alcuni software engineers preferiscono riscrivere componenti perchè credono di poterle migliorare
+			\end{itemize}
+			Fattori da considerare quando si sta pianificando il riuso:
+			\begin{itemize}
+				\item \textbf{The development schedule for the software}: se il software deve essere sviluppato velocemente, bisognerebbe riusare completamente un sistema piuttosto che una componente singola.
+				\item \textbf{The expected software lifetime}: se si pensa ad un sistema con ciclo di vita lungo, bisognerebbe concentrarsi sulla manutenibilità del sistema. In questo caso si mira a riusare sistemi e componenti open-source più sicuri.
+				\item \textbf{The background, skills and experience of the development team}: la cosa migliore è focalizzarsi nel riuso di aree in cui il team ha esperienza
+				\item \textbf{The criticality of the software and its non-functional requirements}: per un sistema che deve essere certificato da un regolatore esterno, bisognerebbe creare una parte di sicurezza, ma questo è difficile se non si ha accesso al codice sorgente. Per esempio, se il software ha dei requisiti stringenti potrebbe risultare impossibile usare strategie quali il model-driven engineering (MDE).
+				\item \textbf{The application domain}: in molti domini applicativi, come sistemi industriali e d'informazione medica, ci sono prodotti generici che possono essere riusati in una situazione locale. Qui fare riuso è spesso conveniente. 
+				\item \textbf{The platform on which the system will run}: come i .NET sono specifici delle piattaforme Microsoft, esistono sistemi di applicazioni generici che sono specifici di una certa piattaforma. Si è quindi in grado di riusare solo se il nostro sistema è progettato per la stessa piattaforma.  
+			\end{itemize}
+		
+		 	Per quel che riguarda i framework, Schimdt sostiene che il framework è: \textit{an integrated set of software artifacts (such as classes, objects and components) that collaborate to provide a reusable architecture for a family of related applications}. I frameworks forniscono supporto per caratteristiche generiche che possono essere usate in tutte le applicazioni di tipo simile. \\
+		 	Quando una compagnia deve supportare un numero di sistemi simili ma non identici, uno degli approcci di riuso più efficaci è creare una \textit{software product line}. Una \textit{software product line} è un set di applicazioni con un'architettura comune e componenti condivise in cui ogni applicazione è specializzata per riflettere specifici requisiti del cliente.  Generalmente un'applicazione base include:
+		 	\begin{itemize}
+		 		\item \textbf{Core components}: forniscono un'infrastruttura di supporto e di solito non vengono modificate quando viene sviluppata una nuova istanza della \textit{software product line}.
+		 		\item \textbf{Configurable application components}: possono essere modificate e configurate per specializzare una nuova applicazione.
+		 		\item \textbf{Specialized application components}: specifiche del dominio, alcune o tutte possono essere rimpiazzare quando una nuova istanza della \textit{software product line} viene creata.
+		 	\end{itemize}
+	 	 	
+	 	 	\paragraph{CBSE}
+	 	 	Le componenti sono ad un livello di astrazione più alto degli oggetti e sono definite dalle loro interfacce. Sono solitamente più grandi degli oggetti singoli e tutti i dettagli implementativi sono nascosti alle altre componenti. \\
+	 		\textit{Component-based software engineering} è il processo di definizione, implementazione e integrazione o composizione di queste componenti scarsamente accoppiate e indipendenti nei sistemi.  \\
+	 		Le caratteristiche essenziali un una componente usate nel CBSE (\textit{Component-based software engineering}):
+	 		\begin{itemize}
+	 			\item \textbf{Composable}
+	 			\item \textbf{Deployable}
+	 			\item \textbf{Documented}
+	 			\item \textbf{Independent}
+	 			\item \textbf{Standardized}
+	 		\end{itemize}
+ 			Un modo utile di vedere una componente è vederla come un fornitore di uno o più servizi:
+ 			\begin{itemize}
+ 				\item La \textbf{componente} è un'entità eseguibile indipendente che viene definita dalla sua interfaccia. Non c'è bisogno di saperne il codice sorgente per usarla.
+ 				\item I \textit{servizi} offerti da una componente sono resi disponibili attraverso un'interfaccia e tutte le interazioni avvengono tramite quell'interfaccia. L'interfaccia della componente è espressa in termini di operazioni parametrizzate e il suo stato interno non è mai esposto.
+ 			\end{itemize}
+ 			Di base tutte le componenti hanno due interfacce collegate:
+ 			
+ 			\begin{figure}[H]
+ 				\centering
+ 				\includegraphics[width=0.8\textwidth]{img/interfaces}		
+ 				\caption{Interfacce di una componente.}
+ 			\end{figure} 
+ 			
+ 			\begin{itemize}
+ 			 	\item La \textit{requires interface} specifica i servizi che le altre componenti del sistema devono fornire affinchè la componente funzioni correttamente. Se questi servizi non sono disponibili, la componente non funzionerà.
+ 			 	\item La \textit{provides interface} definisce i servizi forniti dalla componente. Quest'interfaccia è la componente API.
+ 			\end{itemize} 
+ 		
+ 			\paragraph{Component models}
+ 			Un \textit{component model} è una definizione di standard per l'implementazione, la documentazione e il deployment di componenti. Questi standard sono per gli sviluppatori delle componenti per assicurare che le componenti siano interoperabili. Per \textit{service components} il più importante modello a componenti è il Web Service model, mentre per le \textit{embedded components} sono ampiamenti usati i modelli Enterprise Java Beans(EJB) e Microsoft's .NET.
+ 			
+ 			\begin{figure}[H]
+ 				\centering
+ 				\includegraphics[width=0.8\textwidth]{img/componentmodel}		
+ 				\caption{Elementi base di un component model.}
+ 			\end{figure} 
+ 		
+ 			\paragraph{CBSE processes}
+ 			I processi CBSE sono processi software che supportano la \textit{Component-Based Software Engineering}. Ne esistono di due tipi:
+ 			\begin{itemize}
+ 				\item \textbf{Development for reuse}: processo mirante allo sviluppo di componenti o servizi che saranno riusati in altre applicazioni. Generalmente coinvolge componenti generiche già esistenti.
+ 				\item \textbf{Development with reuse}: processo che sviluppa nuove applicazioni usando componenti e servizi esistenti.
+ 			\end{itemize}
+ 		
 			
 			\subsubsection{Agile} \index{Modello Agile}
 			\textbf{In breve}: è altamente dinamico ed è fatto di brevi ciclo iterativi e incrementali. \\

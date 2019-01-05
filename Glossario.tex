@@ -35,9 +35,8 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{float}
-%\usepackage{subcaption} %per due immagini vicine
-%\usepackage{caption}
-\usepackage{subfig}
+\usepackage{subfig} %per due immagini vicine
+\usepackage{fancyhdr} %per l'header delle pagine
 
 
 \geometry{
@@ -49,6 +48,8 @@
 
 \AtBeginDocument{\renewcommand\indexname{Indice analitico}}
 \makeindex
+
+
 
 \begin{document}
 	
@@ -64,6 +65,14 @@
 	\clearpage
 	\printindex \label{index} %stampa l'indice in questa posizione 
 	\clearpage
+	
+	
+	\pagestyle{fancy}
+	\fancyhf{}
+	\rhead{\hyperref[index]{\color{purple}{Ritorna all'indice}}}
+	\lhead{\textit{Glossario LC}}
+	\rfoot{ \thepage}
+	
 	
 	\include{sections/A}
 	\include{sections/B}
