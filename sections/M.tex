@@ -41,6 +41,9 @@
 		\subsection{MISTAKE}	\index{Mistake}	\label{mistake}
 		Ci siamo sbagliati noi nel produrre qualcosa che se utilizzato  nel SW, causerà errore. Questo è quindi a monte di tutto.		 
 		
+		\subsection{MOCK}	\index{Mock}	\label{mock}
+		I \textit{mock object} (simulati o mock object) sono degli oggetti simulati che riproducono il comportamento degli oggetti reali in modo controllato. Nella programmazione ad oggetti, un programmatore crea un oggetto mock per testare il comportamento di altri oggetti, reali, ma legati ad un oggetto inaccessibile o non implementato. Allora quest'ultimo verrà sostituito da un mock.
+		
 		\subsection{MODELLI DI SVILUPPO} \index{Modelli di sviluppo} \label{modelli}
 		Il modello è una costruzione astratta che fa capire qual è il problema e dà strumenti per risolverlo. È un riferimento ideale ad una cosa concreta, quindi astrazione non eseguibile, ma che mi definisce le proprietà. Date le diverse transizioni previste tra gli stati di un ciclo di vita e diverse regole di attivazione, esistono diversi tipi di modelli.
 		%Flipped Classroom 6 dicembre
@@ -61,7 +64,7 @@
 			\item \textbf{Come lo si attiva}: individuando le attività riconoscibili dalle baseline che ho scelto mettendole nel tempo disponibile e assegnandole.
 		\end{itemize}	
 		
-			\subsubsection{Sequenziale (o a cascata)} \index{Modello Sequenziale} \label{msequenziale}
+			\subsubsection{Sequenziale (o a cascata)} \index{Modello sequenziale} \label{msequenziale}
 			\textbf{In breve}: ha rigide fasi sequenziali. \\
 			 Tutto deve essere ripetibile (quindi anche migliorabile) e lineare (successioni di \underline{\hyperref[fase]{fasi}}), ma non ammette un ritorno a fasi precedenti. Adotta quindi una strategia in cui si continua o al più ci si ferma. Si prosegue solo se l'azione viene considerata buona (quindi documentata prima). I suoi prodotti sono principalmente \textit{documenti}. Ogni fase è caratterizzata da pre e post condizioni (di ingresso le prime e di uscita le seconde) e viene definita in termini di responsabilità e ruoli coinvolti. Dato che le fasi sono durate temporali, devono essere distinte e non sovrapposte nel tempo, dato che presentano delle dipendenze causali tra loro. Lo schema per il modello a cascata prevede in ordine: \underline{\hyperref[analisideirequisiti]{Analisi}} - \underline{\hyperref[progettazione]{Progettazione}} - \underline{\hyperref[realizzazione]{Realizzazione}} - \underline{\hyperref[manutenzione]{Manutenzione}}.  \\
 			 \textbf{Difetto}: è totalmente rigido quindi ha bisogno di correttivi (come i \underline{\hyperref[prototipo]{prototipi}}).
@@ -72,7 +75,7 @@
 			 	\caption{Schema del modello a cascata secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
 			 \end{figure} 
 			
-			\subsubsection{Incrementale} \index{Modello Incrementale} \label{mincrementale}
+			\subsubsection{Incrementale} \index{Modello incrementale} \label{mincrementale}
 			\textbf{In breve}: realizzazione in più passi, prevede rilasci multipli e successivi, ciascuno realizza un incremento di funzionalità. \\
 			Dato che spesso non conviene posticipare l'integrazione di tutte le parti del sistema, risulta migliore l'\underline{\hyperref[integrazione]{integrazione continua}} di piccole parti. Sceglie un ordine di sviluppo che prepari il passaggio successivo motivo per cui ci vuole un modo strategico per capire come muoversi. I primi incrementi possono essere frutto di prototipazione,
 			aiutando a fissare meglio i requisiti per gli incrementi successivi, ma i primi incrementi puntano a soddisfare i requisiti più importanti sul piano strategico così essi diventano presto chiari e stabili e quelli meno importanti si possono armonizzare al sistema. Ogni incremento riduce quindi il rischio di fallimento. Analisi e progettazione architetturale non vengono ripetute, dato che l'architettura del sistema è ben identificata e fissata dall'inizio, invece la realizzazione è incrementale (al momento della validazione può avvenire un ritorno).
@@ -83,7 +86,7 @@
 				\caption{Schema del modello incrementale secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
 			\end{figure} 
 			
-			\subsubsection{Iterativo} \index{Modello Iterativo} \label{miterativo}
+			\subsubsection{Iterativo} \index{Modello iterativo} \label{miterativo}
 			\textbf{In breve}: ha ripetute iterazioni interne. \\
 			Questo tipo di modello è applicabile a qualunque modello di ciclo di vita; consente infatti maggior capacità di adattamento. Il problema è che può andare incontro al rischio di non convergenza perché ogni iterazione comporta un ritorno all'indietro nella direzione opposta all'avanzamento del tempo. In generale conviene quindi decomporre la realizzazione del sistema in parti più piccole trattando prima le parti più critiche (magari quelle i cui requisiti vanno maggiormente chiariti). 
 			
@@ -97,7 +100,7 @@
 			 	\caption{Schema del modello evolutivo secondo lo \underline{\hyperref[standard]{standard}} ISO 12207.}
 			 \end{figure} 	
 			
-			\subsubsection{Per componenti} \index{Modello per componenti} %!!!APPROFONDIRE
+			\subsubsection{Per componenti} \index{Modello per componenti}
 			\textbf{In breve}: è orientato a massimizzare il riuso di software. \\
 			 Decomposto in parti già esistenti e funzionanti, riusabili. L'analisi dei requisiti viene in seguito rivisitata in base alle possibilità di riuso.
 			
@@ -123,7 +126,7 @@
 				\item Sviluppo accelerato
 				\item Aumento di affidabilità, perchè software che è stato provato e testato in altri sistemi funzionanti è più affidabile di un nuovo software. I suoi difetti di progettazione e implementazione dovrebbero già esser stati trovati e sistemati.
 				\item  Ridotto rischio di processo, vero specialmente per grandi componenti software riusate come sottosistemi. È un fattore importante per il Project Manager perché riduce il margine di errore nella stima dei costi di un progetto.
-				\item Conformità con gli standard, perché alcuni standard, come gli intrface standard, possono essere implementati come set di componenti riusabili
+				\item Conformità con gli standard, perché alcuni standard, come gli interface standard, possono essere implementati come set di componenti riusabili
 			\end{itemize}
 			Ci sono però anche delle difficoltà legate al riuso come:
 			\begin{itemize}
@@ -197,7 +200,7 @@
  			\end{itemize}
  		
 			
-			\subsubsection{Agile} \index{Modello Agile}
+			\subsubsection{Agile} \index{Modello agile}
 			\textbf{In breve}: è altamente dinamico ed è fatto di brevi ciclo iterativi e incrementali. \\
 			Basato su principi fortemente di reazione che sono:
 				\begin{enumerate}
@@ -209,7 +212,7 @@
 		 	Si basa sull'idea di \textit{user story}, ovvero una funzionalità che è significativa per l'utente e che vuole nella realizzazione del software richiesto. Ogni \textit{user story} è definita un documento che descrive il problema, una sintesi delle conversazioni di discussione del problema con gli \underline{\hyperref[stakeholder]{stakeholder}} e la strategia da adottare per soddisfare il problema. Si prosegue suddividendo il lavoro in piccoli  \underline{\hyperref[incremento]{incrementi}} (che possono essere sviluppati anche indipendentemente) sviluppati in modo continuo e sequenziale dall'analisi all'integrazione. Gli \textit{obiettivi strategici} sono poter dimostrare costantemente al cliente quanto fatto e che l'intero  \underline{\hyperref[prodotto]{prodotto SW}} sia ben integrato e verificato. 
 		 	[NB: Non é molto buono. É assente la documentazione quindi é più un costo che un valore]
 			
-			\subsection{SCRUM} 
+			\subsection{SCRUM}	\index{Modello SCRUM}	\label{scrum}
 			\textbf{In breve}: è un tipo di Modello Agile ["mischia di rugby"]. \\
 			È costituito da:
 				\begin{itemize}

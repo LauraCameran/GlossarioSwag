@@ -23,7 +23,7 @@
 		E devono essere 
 		\begin{itemize}
 			\item ripetibili: per questo si specifica ambiente di esecuzione, attese e procedure;
-			\item automatizzati: per questo si usano strumenti come \textit{\underline{\hyperref[driver]{driver}}}, \textit{\underline{\hyperref[stub]{stub}}} e \textit{\underline{\hyperref[logger]{logger}}};
+			\item automatizzati: per questo si usano strumenti come \textit{\underline{\hyperref[driver]{driver}}}, \textit{\underline{\hyperref[stub]{stub}}} e \textit{\underline{\hyperref[logger]{logger}}} (sono \underline{\hyperref[mock]{mock}});
 			\item oggettivi e non personalizzati;
 		\end{itemize}
 		Ma fare i test in modo esaustivo è impossibile.
@@ -34,7 +34,7 @@
 			\includegraphics[width=0.9\textwidth]{img/test}		
 			\caption{Tipi di test (analisi dinamica).}
 		\end{figure} 
-		%analisi dinamica %!!  20 dicembre
+		%analisi dinamica % 20 dicembre
 		I test comportano l'esecuzione dell'oggetto di verifica e devono dare misure di qualità. Ogni test deve avere un obiettivo:
 		\begin{itemize}
 			\item chiaro;
@@ -107,7 +107,7 @@
 		La strategia si basa sostanzialmente di proseguire per passi, aggiungendo "pezzi" fino al completamento. Adotta quindi una strategia incrementale. Assemblo prima i produttori e poi i consumatori, seguendo la mia architettura. Dovrebbe essere inoltre reversibile perché se, per esempio, assemblo A e B e questo non va bene, allora devo avere la possibilità di tornare indietro.
 		Secondo gli approcci \underline{\hyperref[topdown]{top-down}} e \underline{\hyperref[bottomup]{bottom-up}} qui, più in alto ci sta l'interazione con l'utente, più in basso ci sta la persistenza. \\
 		Scelgo bottom-up se l'utente non ha ancora un punto da cui lavorare. Si integrano prima le parti con maggiore utilità e minore dipendenza. Questa strategia riduce il numero di stub necessari al test ma ritarda la disponibilità di funzionalità di alto livello. \\
-		Scelgo top-down se è utile negoziare con l'utente. Questa strategia comporta l’uso di molti stub ma integra a partire dalle funzionalità di più alto livello. %!!slide 26/34 
+		Scelgo top-down se è utile negoziare con l'utente. Questa strategia comporta l’uso di molti stub ma integra a partire dalle funzionalità di più alto livello. %slide 26/34 
 		Il test di integrazione ha tanti test quanti ne servono per accertarsi che tutti i dati scambiati attraverso ciascuna interfaccia siano conformi alla loro specifica e accertarsi che tutti i flussi di controllo previsti siano stati effettivamente provati.
 	
 		
