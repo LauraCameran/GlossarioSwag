@@ -4,9 +4,11 @@
 		\subsection{MANUALI}	\index{Manuali} \label{manuali}
 		Uno dei prodotti che racconta il prodotto all'utente.
 		
+
 		\subsection{MANUALE DELLA QUALITÀ} \index{Manuale della qualità} \label{manualequalita} % (slide 10) Set Lezione del 4/12 - Qualità di processo
 		Il documento che definisce il sistema di gestione della qualità di un’organizzazione. Ha una visione ad alto livello. Si integra con i processi e le procedure aziendali e fissa gli obiettivi di qualità aziendali e le strategie per perseguirli.
 	
+
 		\subsection{MANUTENZIONE} \index{Manutenzione} \label{manutenzione}
 		Complesso delle operazioni necessarie a conservare la conveniente funzionalità ed \underline{\hyperref[efficienza]{efficienza}}. Può essere:
 			\begin{itemize}
@@ -16,6 +18,7 @@
 			\end{itemize}
 		Dato che bisogna avere memoria di quello che ha funzionato e quello che funziona ora, possiamo dire che un prodotto sotto manutenzione ha una storia, ed essa va gestita con \underline{\hyperref[controllodiversione]{controllo di versione}}.
 			
+
 		\subsection{MATURITÀ} \index{Maturità} \label{maturita} %(slide 14) Set Lezione del 4/12 - Qualità di processo
 		Misura la \underline{\hyperref[qualita]{qualità}} dei \underline{\hyperref[processo]{processi}}, ovvero misura quanto (e quanto bene) l’azienda è governata dal suo sistema di processi. È quindi caratteristica di un insieme di processi e rappresenta il risultato delle \textit{\underline{\hyperref[capability]{capability}}} dei processi considerati.
 		\begin{figure}[H]
@@ -26,6 +29,7 @@
 		I livelli di maturità di \underline{\hyperref[cmmi]{CMMI}} mi aiutano a capire con quale intelligenza agisco.\\
 		La maturità di prdotto valuta il grado di evoluzione del prodotto: quanto migliora in seguito alle prove, quanto diminuisce la densità dei difetti, quanto può costare la scoperta del prossimo difetto.
 		
+
 		\subsection{METRICA} \index{Metrica} \label{metrica} 
 		Integrale degli usi o utenti nel tempo.\\
 	
@@ -36,14 +40,54 @@
 				\item \textit{Testo}: perché il testo è facilmente offuscabile, quindi si usa "l'indice di nebbia"/leggibilità. 
 			\end{itemize}
 		Dà il modo di classificare attributi di processo e ci aiuta a ragionare a monte del problema e non a valle. In questo modo si possono predire gli attributi che arriveranno (capire prima se il prodotto farà schifo). L'obiettivo è quello di identificare anomalie \textit{"the sooner the better"}. \\
-		Associate alla \underline{\hyperref[qualita]{Qualità del Software}} c'è l'idea di \textit{assunzioni} sulle metriche: nostro modo di pensare al problema. Attenzione perché non sempre si può misurare ciò che vogliamo. Ci interessa misurare ciò che è tracciabile di quello che vogliamo sapere (esempio dell'analisi del sangue: voglio sapere una cosa di alto livello non misurabile, tramite dati del mio sangue che sono misurabili). Importanti attributi sono: manutenibilità, affidabilità, \underline{\hyperref[portabilita]{portabilità}} e usabilità.
+		Associate alla \underline{\hyperref[qualita]{Qualità del Software}} c'è l'idea di \textit{assunzioni} sulle metriche: nostro modo di pensare al problema. \\
+		Attenzione perché non sempre si può misurare ciò che vogliamo. Ci interessa misurare ciò che è tracciabile di quello che vogliamo sapere (esempio dell'analisi del sangue: voglio sapere una cosa di alto livello non misurabile, tramite dati del mio sangue che sono misurabili). Importanti attributi sono: manutenibilità, affidabilità, \underline{\hyperref[portabilita]{portabilità}} e usabilità.\\
+		%26 febbraio 2019 - Misurazione del software - Metodi e obiettivi di quantificazione
+		%slide 16/25
+		Il problema delle metriche SW è che il software è immateriale, difficile da misurare e le tecnologie SW cambiano rapidamente. \\
+		%slide 17/25
+		Metriche di progettazione:
+		\begin{itemize}
+			\item Grado di coesione
+			\item Grado di accoppiamento: questo se alto è dannoso perchè la modifica in uno crea danni sull'altro.
+			\item Complessità strutturale: dipendenza da fuori (metodo con 30 parametri). Funzione del fan-out (di una porta logica è il numero di porte logiche che possono essere collegate alla sua uscita).
+			\item Complessità del flusso dati: funzione del numero di parametri in ingresso e in uscita.
+			\item Complessità del sistema: funzione di complessità strutturale e complessità del flusso dati.
+		\end{itemize}
+		La \textit{complessità ciclomatica} ci interessa perchè più cammini ho, più test devo fare.
 		
+
 		\subsection{MISTAKE}	\index{Mistake}	\label{mistake}
-		Ci siamo sbagliati noi nel produrre qualcosa che se utilizzato  nel SW, causerà errore. Questo è quindi a monte di tutto.		 
+		Ci siamo sbagliati noi nel produrre qualcosa che se utilizzato  nel SW, causerà errore. Questo è quindi a monte di tutto (vedi problemi nei \underline{\hyperref[test]{test}}).	
 		
+		%26 febbraio 2019 - Misurazione del software - Metodi e obiettivi di quantificazione
+		\subsection{MISURA}	\index{Misura} \label{misura}
+		La misura assegna un valore quantitativo a un'entità per caratterizzarne un attributo specifico. \\
+		\textbf{Obiettivo}: rendere oggettivi i risultati delle valutazioni effettuate (perchè siamo interessati in qualcosa di osservabile che ci aiuti a capire come siamo messi).
+		Quest'oggettività implica:
+		\begin{itemize}
+			\item Ripetibilità
+			\item Confrontabilità
+			\item Confidenza
+		\end{itemize}
+		Nei limiti dell'approssimazione e della possibilità di astrazione. \\
+		\textbf{Misura di realtà} è diverso da \textbf{indicatore}.
+		La misura di realtà è per esempio il metro (per l'altezza).
+		Gli indicatori invece ci servono per un confronto, mi suggerisoco qualcosa, ma sono solo degli indicatori. Non danno delle verità. \\
+		Un giudizio di valutazione si forma con: %slide 7/25
+		\begin{itemize}
+			\item \textbf{Serie storica}: diagramma che ci dice l'andamento (esempio della polizia Svizzera che mette la multa). Dà delle tendenze nel tempo che sono molto utili.
+			\item \textbf{Cruscotto}: alimentato in push, ovvero sempre valido, aggiornato e sempre a nostra disposizione. Ci deve dare informazioni.
+		\end{itemize}
+		Una \underline{\hyperref[metrica]{metrica}} di riferimento per la misurazione del software è \underline{\hyperref[leadtime]{lead time}}. 
+		
+		
+		
+
 		\subsection{MOCK}	\index{Mock}	\label{mock}
 		I \textit{mock object} (simulati o mock object) sono degli oggetti simulati che riproducono il comportamento degli oggetti reali in modo controllato. Nella programmazione ad oggetti, un programmatore crea un oggetto mock per testare il comportamento di altri oggetti, reali, ma legati ad un oggetto inaccessibile o non implementato. Allora quest'ultimo verrà sostituito da un mock.
 		
+
 		\subsection{MODELLI DI SVILUPPO} \index{Modelli di sviluppo} \label{modelli}
 		Il modello è una costruzione astratta che fa capire qual è il problema e dà strumenti per risolverlo. È un riferimento ideale ad una cosa concreta, quindi astrazione non eseguibile, ma che mi definisce le proprietà. Date le diverse transizioni previste tra gli stati di un ciclo di vita e diverse regole di attivazione, esistono diversi tipi di modelli.
 		%Flipped Classroom 6 dicembre
@@ -212,7 +256,7 @@
 		 	Si basa sull'idea di \textit{user story}, ovvero una funzionalità che è significativa per l'utente e che vuole nella realizzazione del software richiesto. Ogni \textit{user story} è definita un documento che descrive il problema, una sintesi delle conversazioni di discussione del problema con gli \underline{\hyperref[stakeholder]{stakeholder}} e la strategia da adottare per soddisfare il problema. Si prosegue suddividendo il lavoro in piccoli  \underline{\hyperref[incremento]{incrementi}} (che possono essere sviluppati anche indipendentemente) sviluppati in modo continuo e sequenziale dall'analisi all'integrazione. Gli \textit{obiettivi strategici} sono poter dimostrare costantemente al cliente quanto fatto e che l'intero  \underline{\hyperref[prodotto]{prodotto SW}} sia ben integrato e verificato. 
 		 	[NB: Non é molto buono. É assente la documentazione quindi é più un costo che un valore]
 			
-			\subsection{SCRUM}	\index{Modello SCRUM}	\label{scrum}
+			\subsubsection{SCRUM}	\index{Modello SCRUM}	\label{scrum}
 			\textbf{In breve}: è un tipo di Modello Agile ["mischia di rugby"]. \\
 			È costituito da:
 				\begin{itemize}
@@ -229,7 +273,6 @@
 			(Complicato, non lo trattiamo). Va da un problema piccolo ad uno sempre più grande. Pensato per attività che non hanno una \underline{\hyperref[best]{best practice}} ben nota.
 			
 						
-			
 		\subsection{MODULI}	\index{Moduli}	\label{moduli}
 		La più piccola entità progettuale che sia utile rappresentare.	
 	
