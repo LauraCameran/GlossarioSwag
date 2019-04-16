@@ -3,8 +3,8 @@
 % --------------------------
 % 	- Aggiungi una subsection del termine:
 % 		\subsection{Termine} \index{Termine} % alt{forma alternativa,altra,altra}
-%		Descrizione del termine. 
-%	- La parte % alt{...,...} serve allo script nel caso ci siano forme alternative 
+%		Descrizione del termine.
+%	- La parte % alt{...,...} serve allo script nel caso ci siano forme alternative
 %	  della stessa parola, ad esempio plurali.
 % 	- Se ha una fonte, mettila nella sezione finale (es. url, doc, ecc)
 %
@@ -16,7 +16,7 @@
 %	- Va ricreato il file esterno dell'indice.
 %    	Comando in TexStudio: Strumenti --> Indice
 %	- Verificare che l'indice sia aggiornato correttamente.
-%	- Nella repo ci vanno solo i file .tex e .idx 		
+%	- Nella repo ci vanno solo i file .tex e .idx
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %V.I sono i very important, macro argomenti
@@ -25,7 +25,7 @@
 \documentclass[12pt]{article}
 
 \usepackage{makeidx}
-\usepackage{geometry}
+%\usepackage{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 \usepackage{xkeyval}
@@ -37,14 +37,14 @@
 \usepackage{float}
 \usepackage{subfig} %per due immagini vicine
 \usepackage{fancyhdr} %per l'header delle pagine
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
 
-
-\geometry{
-	a4paper,
-	total={160mm,225mm},
-	left=25mm,
-	top=25mm
-}
+% \geometry{
+% 	a4paper,
+% 	total={160mm,225mm},
+% 	left=25mm,
+% 	top=25mm
+% }
 
 \AtBeginDocument{\renewcommand\indexname{Indice analitico}}
 \makeindex
@@ -52,28 +52,30 @@
 
 
 \begin{document}
-	
+
 	\begin{titlepage}
 		\centering
-		\LARGE \textbf{Glossario}
+		\LARGE \textbf{Glossario di Ingegneria del Software} \\
+		\small \textbf{a.a. 2018-2019}
 	\end{titlepage}
-	
+
 	\setcounter{secnumdepth}{0}
 	\setcounter{tocdepth}{1}
-	
+
 	\tableofcontents
 	\clearpage
-	\printindex \label{index} %stampa l'indice in questa posizione 
+	\printindex \label{index} %stampa l'indice in questa posizione
 	\clearpage
-	
-	
+
+
 	\pagestyle{fancy}
 	\fancyhf{}
 	\rhead{\hyperref[index]{\color{purple}{Ritorna all'indice}}}
-	\lhead{\textsl{Glossario LC}}
+	% \lhead{\textsl{Glossario LC}}
+	\lhead{\color{black!75}Glossario L.C.}
 	\rfoot{ \thepage}
-	
-	
+
+
 	\include{sections/A}
 	\include{sections/B}
 	\include{sections/C}
@@ -81,10 +83,10 @@
 	\include{sections/E}
 	\include{sections/F}
 	\include{sections/G}
-	\include{sections/H}
+	%\include{sections/H}
 	\include{sections/I}
 	\include{sections/J}
-	\include{sections/K}
+	%\include{sections/K}
 	\include{sections/L}
 	\include{sections/M}
 	\include{sections/N}
@@ -100,25 +102,25 @@
 	\include{sections/X}
 	\include{sections/Y}
 	\include{sections/Z}
-		
-	
+
+
 
 %(Allo scritto viene chiesto l'Analisi dei Requisiti. Non ci sarà niente invece riguardo l'implementazione. Ci saranno domande sulle tecniche di verifica)
-		
+
 		%Da inserire:
-		
+
 		%Il caso d'uso ha una funzione esplorativa.
-		
-		
+
+
 		%26 febbraio 2019 - Misurazione del software - Metodi e obiettivi di quantificazione
-		
+
 		%Idea per metriche: violazioni dello stile di codifica, con grafico a linea diviso per settimane
-		
-		
-		
-		
-	
-		
-		
-	
+
+
+
+
+
+
+
+
 \end{document}
