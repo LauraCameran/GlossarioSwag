@@ -1,0 +1,206 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{A}{4}{section*.3}% 
+\contentsline {subsection}{AMMINISTRATORE}{4}{section*.4}% 
+\contentsline {subsection}{\emph {ANALISI DEI REQUISITI}}{4}{section*.5}% 
+\contentsline {subsection}{ANALISTA}{6}{section*.7}% 
+\contentsline {subsection}{APPROCCIO}{7}{section*.8}% 
+\contentsline {subsubsection}{Sistematico}{7}{section*.9}% 
+\contentsline {subsubsection}{Disciplinato}{7}{section*.10}% 
+\contentsline {subsubsection}{Quantificabile}{7}{section*.11}% 
+\contentsline {subsection}{ARCHITECTURE SELECTED}{7}{section*.12}% 
+\contentsline {subsection}{ARCHITETTURA}{7}{section*.13}% 
+\contentsline {subsection}{AUDIT PROCESS}{8}{section*.14}% 
+\contentsline {section}{B}{9}{section*.15}% 
+\contentsline {subsection}{BACKLOG}{9}{section*.16}% 
+\contentsline {subsection}{BASELINE}{9}{section*.17}% 
+\contentsline {subsection}{BEST PRACTICE}{9}{section*.18}% 
+\contentsline {subsection}{BODY OF KNOWLEDGE}{9}{section*.19}% 
+\contentsline {subsection}{BOTTOM-UP}{9}{section*.20}% 
+\contentsline {subsection}{BRAINSTORMING}{9}{section*.21}% 
+\contentsline {subsection}{BRANCH COVARAGE}{10}{section*.22}% 
+\contentsline {section}{C}{11}{section*.23}% 
+\contentsline {subsection}{CAMMINO CRITICO}{11}{section*.24}% 
+\contentsline {subsection}{CAPABILITY}{11}{section*.25}% 
+\contentsline {subsection}{CAPITOLATO D'APPALTO}{11}{section*.26}% 
+\contentsline {subsection}{CICLO DI DEMING}{11}{section*.27}% 
+\contentsline {subsection}{CICLO DI VITA}{11}{section*.28}% 
+\contentsline {subsection}{CLASSIFICAZIONE DEI REQUISITI}{12}{section*.30}% 
+\contentsline {subsection}{CMMI}{12}{section*.31}% 
+\contentsline {subsection}{CoCoMo}{13}{section*.32}% 
+\contentsline {subsection}{COESO}{13}{section*.33}% 
+\contentsline {subsection}{COLLAUDO}{13}{section*.34}% 
+\contentsline {subsection}{COMMITTENTE}{13}{section*.35}% 
+\contentsline {subsection}{COMPONENTE}{13}{section*.36}% 
+\contentsline {subsection}{COMPORTAMENTO PREDICIBILE}{13}{section*.37}% 
+\contentsline {subsection}{COMPUTATIONAL THINKING}{14}{section*.38}% 
+\contentsline {subsection}{CONFIGURAZIONE}{14}{section*.39}% 
+\contentsline {subsection}{CONSIDERAZIONI PRAGMATICHE}{14}{section*.40}% 
+\contentsline {subsection}{CONSUNTIVO}{14}{section*.41}% 
+\contentsline {subsection}{CONTROLLO}{14}{section*.42}% 
+\contentsline {subsubsection}{Di Versione}{14}{section*.43}% 
+\contentsline {subsubsection}{Di Configurazione}{14}{section*.44}% 
+\contentsline {subsection}{CONTROLLO DI QUALIT\IeC {\`A}}{15}{section*.45}% 
+\contentsline {subsection}{CORRETTEZZA}{15}{section*.46}% 
+\contentsline {subsubsection}{Per costruzione}{15}{section*.47}% 
+\contentsline {subsubsection}{Per correzione}{15}{section*.48}% 
+\contentsline {subsection}{COVERAGE}{15}{section*.49}% 
+\contentsline {subsection}{CRITERI DI PROGRAMMAZIONE}{15}{section*.50}% 
+\contentsline {subsection}{CUSTOMER}{16}{section*.51}% 
+\contentsline {section}{D}{17}{section*.52}% 
+\contentsline {subsection}{DEMONSTRABLE}{17}{section*.53}% 
+\contentsline {subsection}{DIAGRAMMA DI GANTT}{17}{section*.54}% 
+\contentsline {subsection}{DIAGRAMMA DI PERT}{17}{section*.56}% 
+\contentsline {subsection}{DIMINISHING RETURNS}{17}{section*.58}% 
+\contentsline {subsection}{DIVIDE ET IMPERA}{18}{section*.59}% 
+\contentsline {subsection}{DOCUMENTI}{18}{section*.60}% 
+\contentsline {subsection}{DRIVER}{18}{section*.61}% 
+\contentsline {section}{E}{19}{section*.62}% 
+\contentsline {subsection}{ECONOMICIT\IeC {\`A}}{19}{section*.63}% 
+\contentsline {subsection}{EFFICACIA}{19}{section*.64}% 
+\contentsline {subsection}{EFFICIENZA}{19}{section*.65}% 
+\contentsline {subsection}{ENDEAVOR}{19}{section*.66}% 
+\contentsline {subsection}{ENGINEERING}{19}{section*.67}% 
+\contentsline {subsection}{ERROR}{19}{section*.68}% 
+\contentsline {section}{F}{20}{section*.69}% 
+\contentsline {subsection}{FAILURE}{20}{section*.70}% 
+\contentsline {subsection}{FASE}{20}{section*.71}% 
+\contentsline {subsection}{FAULT}{20}{section*.72}% 
+\contentsline {section}{G}{21}{section*.73}% 
+\contentsline {subsection}{GESTIONE DELLA CONFIGURAZIONE}{21}{section*.74}% 
+\contentsline {subsection}{GESTIONE DEI CAMBIAMENTI}{21}{section*.75}% 
+\contentsline {subsection}{GESTIONE DEI REQUISITI}{21}{section*.76}% 
+\contentsline {subsection}{GESTIONE DEI RISCHI}{21}{section*.77}% 
+\contentsline {subsection}{\emph {GESTIONE DI PROGETTO}}{22}{section*.79}% 
+\contentsline {subsection}{GESTIONE DI QUALIT\IeC {\`A}}{22}{section*.80}% 
+\contentsline {section}{I}{23}{section*.81}% 
+\contentsline {subsection}{IMPLEMENTATION}{23}{section*.82}% 
+\contentsline {subsection}{INCAPSULAMENTO}{23}{section*.83}% 
+\contentsline {subsection}{INCREMENTO}{23}{section*.84}% 
+\contentsline {subsection}{INSPECTION}{23}{section*.85}% 
+\contentsline {subsection}{INTEGRAZIONE CONTINUA}{23}{section*.86}% 
+\contentsline {subsection}{ITERAZIONE}{23}{section*.87}% 
+\contentsline {section}{J}{24}{section*.88}% 
+\contentsline {subsection}{JOINT REVIEW PROCESS}{24}{section*.89}% 
+\contentsline {section}{L}{25}{section*.90}% 
+\contentsline {subsection}{LAZY}{25}{section*.91}% 
+\contentsline {subsection}{LEAD TIME}{25}{section*.92}% 
+\contentsline {subsection}{LOGGER}{25}{section*.93}% 
+\contentsline {section}{M}{26}{section*.94}% 
+\contentsline {subsection}{MANUALI}{26}{section*.95}% 
+\contentsline {subsection}{MANUALE DELLA QUALIT\IeC {\`A}}{26}{section*.96}% 
+\contentsline {subsection}{MANUTENZIONE}{26}{section*.97}% 
+\contentsline {subsection}{MATURIT\IeC {\`A}}{26}{section*.98}% 
+\contentsline {subsection}{METRICA}{27}{section*.100}% 
+\contentsline {subsection}{MISTAKE}{27}{section*.101}% 
+\contentsline {subsection}{MISURA}{28}{section*.102}% 
+\contentsline {subsection}{MOCK}{28}{section*.103}% 
+\contentsline {subsection}{MODELLI DI SVILUPPO}{28}{section*.104}% 
+\contentsline {subsubsection}{Sequenziale (o a cascata)}{29}{section*.105}% 
+\contentsline {subsubsection}{Incrementale}{30}{section*.107}% 
+\contentsline {subsubsection}{Iterativo}{31}{section*.109}% 
+\contentsline {subsubsection}{A evoluzioni successive}{31}{section*.110}% 
+\contentsline {subsubsection}{Per componenti}{32}{section*.112}% 
+\contentsline {paragraph}{Il riuso}{33}{section*.114}% 
+\contentsline {paragraph}{CBSE}{35}{section*.115}% 
+\contentsline {paragraph}{Component models}{35}{section*.117}% 
+\contentsline {paragraph}{CBSE processes}{36}{section*.119}% 
+\contentsline {subsubsection}{Agile}{36}{section*.120}% 
+\contentsline {subsubsection}{SCRUM}{37}{section*.121}% 
+\contentsline {subsubsection}{A spirale}{37}{section*.122}% 
+\contentsline {subsection}{MODULI}{37}{section*.123}% 
+\contentsline {section}{N}{38}{section*.124}% 
+\contentsline {subsection}{NORME DI PROGETTO}{38}{section*.125}% 
+\contentsline {section}{O}{39}{section*.126}% 
+\contentsline {subsection}{OPPORTUNITY}{39}{section*.127}% 
+\contentsline {subsection}{ORACOLO}{39}{section*.128}% 
+\contentsline {section}{P}{40}{section*.129}% 
+\contentsline {subsection}{PPP}{40}{section*.130}% 
+\contentsline {subsection}{PIANIFICAZIONE}{40}{section*.131}% 
+\contentsline {subsection}{PIANO DI PROGETTO}{40}{section*.132}% 
+\contentsline {subsection}{PIANO DI QUALIFICA}{41}{section*.133}% 
+\contentsline {subsection}{PIANO DI QUALIT\IeC {\`A}}{41}{section*.134}% 
+\contentsline {subsection}{PORTABILIT\IeC {\`A}}{41}{section*.135}% 
+\contentsline {subsection}{PREVENTIVO}{41}{section*.136}% 
+\contentsline {subsection}{PRINCIPIO DEL MIGLIORAMENTO CONTINUO}{41}{section*.137}% 
+\contentsline {subsection}{PROBLEM RESOLUTION}{41}{section*.138}% 
+\contentsline {subsection}{PROCESSO}{41}{section*.139}% 
+\contentsline {subsection}{PRODOTTO SOFTWARE}{43}{section*.140}% 
+\contentsline {subsection}{PRODUCT BASELINE}{44}{section*.141}% 
+\contentsline {subsection}{PRODUTTIVIT\IeC {\`A}}{44}{section*.142}% 
+\contentsline {subsection}{PROGETTAZIONE}{44}{section*.143}% 
+\contentsline {subsection}{PROGETTISTA}{45}{section*.144}% 
+\contentsline {subsection}{PROGETTO}{45}{section*.145}% 
+\contentsline {subsection}{PROGRAMMATORE}{47}{section*.151}% 
+\contentsline {subsection}{PROGRAMMI VERIFICABILI}{48}{section*.152}% 
+\contentsline {subsection}{PROOF OF CONCEPT}{49}{section*.153}% 
+\contentsline {subsection}{PROTOTIPO}{49}{section*.154}% 
+\contentsline {subsection}{PROVA}{49}{section*.155}% 
+\contentsline {section}{Q}{50}{section*.156}% 
+\contentsline {subsection}{QUALIFICA}{50}{section*.157}% 
+\contentsline {subsection}{QUALIT\IeC {\`A}}{50}{section*.158}% 
+\contentsline {section}{R}{51}{section*.159}% 
+\contentsline {subsection}{READY}{51}{section*.160}% 
+\contentsline {subsection}{REALIZZAZIONE}{51}{section*.161}% 
+\contentsline {subsection}{REQUIREMENTS}{51}{section*.162}% 
+\contentsline {subsection}{RESPONSABILE}{52}{section*.163}% 
+\contentsline {subsection}{REVISIONE DEI REQUISITI}{52}{section*.164}% 
+\contentsline {subsection}{REVISIONE DI ACCETTAZIONE}{53}{section*.165}% 
+\contentsline {subsection}{REVISIONE DI PROGETTAZIONE}{53}{section*.166}% 
+\contentsline {subsection}{REVISIONE DI QUALIFICA}{53}{section*.167}% 
+\contentsline {subsection}{RIUSO}{54}{section*.168}% 
+\contentsline {subsection}{RUOLI}{54}{section*.169}% 
+\contentsline {section}{S}{55}{section*.170}% 
+\contentsline {subsection}{SCALABILIT\IeC {\`A}}{55}{section*.171}% 
+\contentsline {subsection}{SEMAT}{55}{section*.172}% 
+\contentsline {subsection}{SISTEMA DI QUALIT\IeC {\'A}}{55}{section*.173}% 
+\contentsline {subsection}{SLACK}{55}{section*.174}% 
+\contentsline {subsection}{SOFTWARE DETERMINISTICO}{55}{section*.175}% 
+\contentsline {subsection}{SOFTWARE ENGINEERING}{55}{section*.176}% 
+\contentsline {subsection}{SOFTWARE SYSTEM}{55}{section*.177}% 
+\contentsline {subsection}{SOLUTION}{55}{section*.178}% 
+\contentsline {subsection}{STAKEHOLDER}{55}{section*.179}% 
+\contentsline {subsection}{STANDARD DI PROCESSO}{56}{section*.180}% 
+\contentsline {subsubsection}{STANDARD IEEE 830-1998}{56}{section*.181}% 
+\contentsline {subsubsection}{STANDARD ISO 12207}{56}{section*.182}% 
+\contentsline {subsubsection}{STANDARD ISO 14598}{57}{section*.184}% 
+\contentsline {subsubsection}{STANDARD ISO 15504}{57}{section*.185}% 
+\contentsline {subsubsection}{STANDARD ISO 15939}{58}{section*.186}% 
+\contentsline {subsubsection}{STANDARD ISO 25000}{58}{section*.187}% 
+\contentsline {subsubsection}{STANDARD ISO 9000}{58}{section*.188}% 
+\contentsline {subsubsection}{STANDARD ISO 9001}{58}{section*.190}% 
+\contentsline {subsubsection}{STANDARD ISO 9126}{58}{section*.191}% 
+\contentsline {subsection}{STATEMENT COVERAGE}{59}{section*.193}% 
+\contentsline {subsection}{STATO}{59}{section*.194}% 
+\contentsline {subsection}{STUB}{59}{section*.195}% 
+\contentsline {subsection}{STUDIO DI FATTIBILIT\IeC {\`A}}{59}{section*.196}% 
+\contentsline {section}{T}{60}{section*.197}% 
+\contentsline {subsection}{TASK}{60}{section*.198}% 
+\contentsline {subsection}{TECHNOLOGY BASELINE}{60}{section*.199}% 
+\contentsline {subsection}{TEMPO/PERSONA}{60}{section*.200}% 
+\contentsline {subsection}{TEST}{60}{section*.201}% 
+\contentsline {subsection}{TEST CASE}{62}{section*.204}% 
+\contentsline {subsection}{TEST DI INTEGRAZIONE}{63}{section*.205}% 
+\contentsline {subsection}{TEST DI REGRESSIONE}{63}{section*.206}% 
+\contentsline {subsection}{TEST DI SISTEMA}{64}{section*.207}% 
+\contentsline {subsection}{TEST DI UNIT\IeC {\`A}}{64}{section*.208}% 
+\contentsline {subsection}{TEST SUITE}{64}{section*.209}% 
+\contentsline {subsection}{TOP-DOWN}{64}{section*.210}% 
+\contentsline {subsection}{TRACCIAMENTO}{64}{section*.211}% 
+\contentsline {section}{U}{66}{section*.213}% 
+\contentsline {subsection}{UNIT\IeC {\`A}}{66}{section*.214}% 
+\contentsline {subsection}{USABLE}{66}{section*.215}% 
+\contentsline {section}{V}{67}{section*.216}% 
+\contentsline {subsection}{VALIDARE}{67}{section*.217}% 
+\contentsline {subsection}{VALUTAZIONE}{67}{section*.218}% 
+\contentsline {subsection}{VERIFICARE}{67}{section*.219}% 
+\contentsline {subsection}{VERIFICATORE}{68}{section*.222}% 
+\contentsline {subsection}{VERSIONE}{68}{section*.223}% 
+\contentsline {section}{W}{69}{section*.224}% 
+\contentsline {subsection}{WALKTHROUGH}{69}{section*.225}% 
+\contentsline {subsection}{WORK BREAKDOWN STRUCTURE}{69}{section*.226}% 
+\contentsline {section}{X}{70}{section*.228}% 
+\contentsline {section}{Y}{71}{section*.229}% 
+\contentsline {section}{Z}{72}{section*.230}% 
+\contentsline {subsection}{ZERO-LATENCY}{72}{section*.231}% 
+\contentsline {subsection}{ZERO-LAXITY}{72}{section*.232}% 
