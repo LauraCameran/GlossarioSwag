@@ -45,13 +45,13 @@
 		\subsection{CLASSIFICAZIONE DEI REQUISITI} \index{Classificazione dei requisiti} \label{classificazione}
 		Guardo in generale i \underline{\hyperref[requirements]{requisiti}} e li classifico in base a:
 		\begin{itemize}
-			\item \textbf{cosa devo fare} con il prodotto, quindi secondo gli attributi del prodotto (ho dei requisiti funzionali)
-			\item \textbf{come devo farlo}, quindi secondo i processi (ho dei requisiti di vincolo)
+			\item \textbf{Cosa devo fare} con il prodotto, quindi secondo gli attributi del prodotto (ho dei requisiti funzionali)
+			\item \textbf{Come devo farlo}, quindi secondo i processi (ho dei requisiti di vincolo)
 		\end{itemize}
 
 		\subsection{CMMI}	\index{CMMI} \label{cmmi} %(slide 11) Set Lezione del 4/12 - Qualità di processo
-		CMM (\textit{\underline{\hyperref[capability]{Capability}} \underline{\hyperref[maturita]{Maturity}} Model}) evoluto poi in CMMI (\textit{Capability Maturity Model Integration}) è un modello per la valutazione uniforme dei fornitori. \\
-		\textit{Model} è l'insieme di criteri per valutare il grado di qualità (in scala assoluta) dei processi dell’azienda, mentre \textit{Integration} è l'architettura di integrazione delle diverse discipline (system, HW, SW) e tipologie di attività delle aziende.
+		CMM (\textit{\underline{\hyperref[capability]{Capability}} \underline{\hyperref[maturita]{Maturity}} Model}) evoluto poi in CMMI (\textit{Capability Maturity Model Integration}) è un \textit{modello di valutazione} (\underline{\hyperref[standard]{standard}}) uniforme dei fornitori. \\
+		\textit{Model} è l'insieme di criteri per valutare il grado di \underline{\hyperref[qualita]{qualità}} (in scala assoluta) dei processi dell’azienda, mentre \textit{Integration} è l'architettura di integrazione delle diverse discipline (system, HW, SW) e tipologie di attività delle aziende.
 
 		\subsection{CoCoMo}	\index{CoCoMo} \label{cocomo}
 		\textit{Constructive Cost Model} è un modello algoritmico che stima le risorse necessarie esprimendone la misura in mesi/persona (\texttt{MP}). 1MP sono 152 ore. \\
@@ -60,12 +60,14 @@
 
 		\subsection{COESO} \index{Coeso} \label{coeso}
 		Ciò che è coeso indica avere delle attività messe insieme a un dato scopo, che devono esserci e se non ci fossero se ne sentirebbe la mancanza.  \\
-		Per quel che riguarda le componenti di un'\underline{\hyperref[architettura]{architettura}} possiamo dire che funzionalità ``vicine'' devono stare nella stessa componente e dato che la modularità spinge a decomporre il grande in piccolo, la ricerca di coesione fornisce un criterio di decomposizione. La coesione va massimizzata per ottenere maggiore manutenibilità e riusabilità, minor legame fra componenti e maggiore comprensibilità dell’architettura del sistema. La coesione inoltre si può misurare. \\
+		Per quel che riguarda le componenti di un'\underline{\hyperref[architettura]{architettura}} possiamo dire che funzionalità ``vicine'' devono stare nella stessa componente e dato che la modularità spinge a decomporre il grande in piccolo, la ricerca di coesione fornisce un criterio di decomposizione. \par
+		La coesione \emph{va massimizzata} per ottenere maggiore manutenibilità e riusabilità, minor legame fra componenti e maggiore comprensibilità dell’architettura del sistema. La coesione inoltre si può misurare. \\
 		Ci sono diversi tipi di buona coesione (la migliore è sempre quella che persegue \textit{information hiding}):
 			\begin{itemize}
-				\item \textbf{Funzionale}: quando le parti concorrono allo stesso specifico compito
-				\item \textbf{Sequenziale}: quando alcune azioni sono più ``vicine'' ad altre per ordine di esecuzione ed è conveniente tenerle insieme
-				\item \textbf{Informativa}: quando le parti agiscono sulla stessa unità di informazione (la \underline{\hyperref[best]{best practice}})
+				\item \textbf{Funzionale}: quando le parti concorrono allo stesso specifico compito.
+				\item \textbf{Sequenziale}: quando alcune azioni sono più ``vicine'' ad altre per ordine di esecuzione ed è conveniente tenerle insieme.
+				\item \textbf{Informativa}: quando le parti agiscono sulla stessa unità d'informazione
+				(la \underline{\hyperref[best]{best practice}}).
 			\end{itemize}
 
 		\subsection{COLLAUDO}	\index{Collaudo}	\label{collaudo}
@@ -106,8 +108,8 @@
 
 
 		\subsection{CONSUNTIVO} \index{Consuntivo} \label{consuntivo}
-		Rendiconto dei risultati di un dato periodo di attività di un ente o di un'impresa. Si stima verso la fine.
-		Esistno:
+		Rendiconto dei risultati di un dato periodo di attività di un ente o di un'impresa, che si stima verso la fine.
+		Esistono:
 			\begin{itemize}
 				\item \textbf{Consuntivo di periodo}: ogni azione in questo periodo chiede nuova pianificazione sul rimanente (il prodotto è la pianificazione del residuo)
 				\item \textbf{\underline{\hyperref[preventivo]{Preventivo}} a finire}: conseguente al consuntivo di periodo
@@ -132,7 +134,7 @@
 
 		\subsection{CORRETTEZZA}	\index{Correttezza} \label{correttezza}
 			\subsubsection{Per costruzione}	\label{byconstruction}
-			\textit{``Correctness by construction''} vuol dire avere strumenti oggettivi misurabili che ci dicono se stiamo andando bene. Con regole sono confidente su quello che ho fatto.
+			\textit{``Correctness by construction''} vuol dire avere strumenti oggettivi misurabili che ci dicono se stiamo andando bene. Con regole di questo tipo, sono confidente di quello che ho fatto.
 			\subsubsection{Per correzione} \label{bycorrection}
 			\textit{``Correctness by correction''} vuol dire provarci, cercando di sistemare pezzo per pezzo. Non sappiamo quindi effettivamente se funziona.
 
@@ -158,4 +160,4 @@
 
 
 		\subsection{CUSTOMER} \index{Customer} \label{customer}
-		Primo elemento di un \underline{\hyperref[progetto]{progetto}}. Comprende \underline{\hyperref[opportunity]{opportunity}} e \underline{\hyperref[stakeholder]{stakeholders}}.
+		Primo elemento di un \underline{\hyperref[progetto]{progetto}} secondo \underline{\hyperref[semat]{SEMAT}}. Comprende \underline{\hyperref[opportunity]{opportunity}} e \underline{\hyperref[stakeholder]{stakeholders}}.
